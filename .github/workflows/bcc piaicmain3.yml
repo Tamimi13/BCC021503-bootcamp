@@ -27,7 +27,7 @@ jobs:
         node-version: 12  
     # Runs a set of commands using the runners shell
     - name: installing surge
-      run: npm install -g surge
+      run: npm install --global surge
       - name: run surge
      run: surge ./ deserted-drop.surge.sh --token ${{ secrets.NEW SECRET BCC }}
         echo Add other actions to build,
