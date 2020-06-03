@@ -28,7 +28,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: installing surge
-      run: npm install -g surge
+      run: sudo npm install --global surge
     - name: deploying surge
       run: surge ./ sturdy-fifth.surge.sh --token ${{secrets.newsurgebcc}}  
         echo Add other actions to build,
